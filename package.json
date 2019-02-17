@@ -64,6 +64,7 @@
     "fcoin-spvnode": "./bin/spvnode"
   },
   "scripts": {
+    "start:dev": "./bin/fcoin --network=testnet --prefix=./tmp --nodes=127.0.0.1:19000 --http-host=127.0.0.1 --wallet-auth=true --api-key=apikey --index-tx=true --index-address=true",
     "clean": "rm -f {browser/,}{bcoin.js,bcoin-worker.js}",
     "docs": "jsdoc -c jsdoc.json",
     "lint": "eslint $(cat .eslintfiles) || exit 0",
